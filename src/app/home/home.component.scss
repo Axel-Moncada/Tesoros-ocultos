@@ -1,0 +1,524 @@
+body {
+  overflow-y: visible !important;
+  font-family: 'Rubik', sans-serif;
+}
+.fondoBU {
+  background-image: url("/assets/img/fondoBU.jpg");
+  height: auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  padding-bottom: 40px;
+
+  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  
+}
+
+.bannerBU {
+  width: 100%;
+  padding: 0px;
+  justify-content: center;
+  display: flex;
+  background: #fae100;
+  height: 65px;
+}
+
+.header-image {
+  padding: 15px;
+  width: 210px;
+}
+
+.imageBanner {
+  max-width: 80%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.rowTable::after {
+  content: "";
+  width: auto;
+  clear: both;
+  display: table;
+}
+
+
+
+.columnImagePajaros {
+  float: left;
+  width: 35%;
+  height: 31vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: right;
+  padding-left: 25vh;
+}
+
+.columnImageGuiaTuristica {
+  float: left;
+  width: 30%;
+  height: 31vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.columnImageGuacamaya {
+  float: left;
+  width: 35%;
+  height: 31vh;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+
+.imagePajaros {
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.imageGuiaTuristico {
+  width: 70%;
+  
+}
+
+.imageGuacamaya {
+  max-width: 100%;
+  max-height: 50%;
+}
+
+.carrusel {
+  width: 100%;
+  
+}
+
+.tarjetas-content {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  overflow: auto;
+  padding-top: 40px;
+  padding-left: 86vh;
+  padding-right: 86vh;
+  padding-block-end: 2vh;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin: 10px 0px;
+  height: 100%;
+  
+}
+
+.tarjetas {
+  height: auto;
+  width: auto;
+  z-index: 10;
+  margin: 0px 4px;
+  position: relative;
+  cursor: pointer;
+  transition: all .25s ease;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .08);
+  background: rgba(255, 255, 255, 0.27);
+  border-radius: 30px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.4px);
+  -webkit-backdrop-filter: blur(8.4px);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  transition: transform 0.4s ease;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+  
+}
+
+.tarjetas .tarjetas-img {
+  margin: 10px 15px;
+  padding: 1px;
+  margin-bottom: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .35s ease-out;
+  
+  
+  
+}
+
+.img-card {
+  border-radius: 20px;
+  width: 230px !important; /* Ajustar el ancho al 100% del contenedor */
+  height: 190px !important; /* Establecer una altura fija */
+  object-fit: cover; /* Ajustar la imagen para cubrir la altura definida */
+
+}
+
+.tarjetas a {
+  text-decoration: none;
+}
+
+.tarjetas:hover {
+  // transform: translate(0, -10px);
+  // box-shadow: 0px 17px 35px 0px rgba(0, 0, 0, .07);
+  transform: scale(1.07);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+}
+
+.tarjetas h2 {
+  margin-top: 20px;
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 98% ;
+  
+}
+
+.tarjetas h3 {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 98% ;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  opacity: 1;
+  margin-top: 3px;
+  line-height: 120%;
+  text-align: justify;
+}
+
+.tarjetas h4 {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 15px;
+}
+
+.tarjetas i {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 15px;
+  font-size: 1.4rem;
+  line-height: 3.2rem;
+}
+
+.tarjetas .tarjetas-text {
+  padding: 0px 21px;
+}
+
+.tarjetas img {
+  //height: 130px;
+  height: 20vh;
+}
+
+.tarjetas img.blur {
+  position: absolute;
+  filter: blur(15px);
+  z-index: -1;
+  opacity: .40;
+  transition: all .35s ease-out;
+}
+
+.tarjetas:hover .tarjetas-img {
+  transform: translate(0px, 0px);
+}
+
+.tarjetas button {
+  padding: 5px 30px;
+  background-color: #00a3e1;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  font-size: 17px;
+  font-weight: 800;
+  display: block;
+  margin: auto;
+  position: absolute;
+  bottom: -21px;
+  left: 50%;
+  width: 140px;
+  transform: translateX(-50%);
+  box-shadow: 2px 3px 7px 0 rgba(0, 0, 0, 0.3);
+}
+
+.tarjetas-content::-webkit-scrollbar {
+  height: 0px;
+}
+
+.tarjetas-content:after {
+  content: '';
+  display: block;
+  min-width: 20px;
+  height: 100px;
+  position: relative;
+}
+
+.btn-flecha {
+  min-width: 70px;
+  margin: auto 30px;
+  height: 70px;
+  border-radius: 100px;
+  background: #00a3e1;
+  border: 0px;
+  outline: none;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, .08);
+  transition: all .25s ease;
+  color: white;
+  font-weight: 900;
+  margin-bottom: 10px;
+}
+
+.btn-flecha:hover {
+  box-shadow: 0px 17px 35px 0px rgba(0, 0, 0, .07);
+}
+
+.btn-flecha i {
+  font-size: 1.2rem;
+}
+
+.slider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 70%;
+
+  overflow: hidden;
+}
+
+.botones {
+  margin-top: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.botones #prev img {
+  position: relative;
+  top: -2px;
+  right: 1px;
+}
+
+.botones #next img {
+  position: relative;
+  top: -2px;
+  right: -1px;
+}
+
+
+.carrusel:after {
+  content: '';
+  top: 0px;
+  left: 0px;
+  height: 100%;
+  position: absolute;
+  width: 173px;
+  z-index: 100;
+  filter: blur(4px);
+  background: linear-gradient(90deg, rgb(255, 193, 20) 0%, rgba(242, 243, 248, 0) 100%);
+}
+
+.carrusel:before {
+  content: '';
+  top: 0px;
+  right: 0px;
+  height: 100%;
+  position: absolute;
+  width: 130px;
+  z-index: 100;
+  filter: blur(4px);
+  background: linear-gradient(90deg, rgba(242, 243, 248, 0) 0%, rgba(255, 193, 20, 1) 100%);
+}
+
+
+
+
+@media (max-width: 820px) {
+
+  .columnImagePajaros {
+    padding-left: 10vh;
+  }
+ 
+
+  .imageBanner {
+    max-width: 80%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    margin-top: 1%;
+  }
+}
+
+@media (max-width: 600px) {
+
+
+  .carrusel{
+    width: 100%;
+    padding: 0 auto;
+  }
+  .botones {
+    display: none;
+  }
+
+  .imageGuiaTuristico {
+    content: url("/assets/img/imagenBUmobile.jpg");
+    width: 95%;
+  }
+
+  .columnImagePajaros {
+    height: 0vh;
+    width: 0%;
+  }
+
+  .columnImageGuiaTuristica {
+    height: auto;
+    width: 100%;
+  }
+
+  .columnImageGuacamaya {
+    height: 0vh;
+    width: 0%;
+  }
+
+  .carrusel:after {
+    content: none
+  }
+
+  .carrusel:before {
+    content: none
+  }
+
+  .tarjetas-content {
+    display: block;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    overflow: auto;
+    padding-top: 0px;
+    padding-left: 0;
+    padding-right: 0;
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    height: 100vh;
+    margin-bottom: 20px;
+  }
+
+  .tarjetas-content .tarjetas:last-child {
+    margin-bottom: 330px;
+  }
+
+  .tarjetas {
+    margin: 22px 2px 70px 2px;
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+    
+
+  }
+
+  .tarjetas h2 {
+    font-size: 2rem;
+  }
+  .tarjetas h3 {
+    font-size: 1.2rem;
+    line-height: normal;
+  }
+
+  .tarjetas p {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .tarjetas button {
+    font-size: 1.5rem;
+    width: 80% !important;
+    bottom: -32px !important;
+  }
+
+  .tarjetas img {
+    width: 100%;
+    height: auto;
+  }
+
+  .tarjetas button {
+    padding: 4px;
+    width: 120px;
+    bottom: -15px;
+  }
+
+  .img-card {
+    border-radius: 20px;
+    width: 100% !important;
+    height: auto !important;
+    object-fit: cover;
+}
+
+
+}
+
+@media (max-width: 450px) {
+
+  .tarjetas-content {
+    display: block;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    overflow: auto;
+    padding-top: 0px;
+    padding-left: 8%;
+    padding-right: 8%;
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  
+  .tarjetas img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 400px) {
+
+  .tarjetas-content {
+    display: block;
+    align-items: center;
+    justify-content: flex-start;
+    width: 90%;
+    overflow: auto;
+    padding-top: 0px;
+    padding-left: 8%;
+    padding-right: 8%;
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+ 
+}
+
+@media (max-width: 320px) {
+
+  .tarjetas-content {
+    display: block;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    overflow: auto;
+    padding-top: 0px;
+    padding-left: 8%;
+    padding-right: 8%;
+    scroll-behavior: smooth;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  
+}

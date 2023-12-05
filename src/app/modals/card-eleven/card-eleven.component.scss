@@ -1,0 +1,415 @@
+img{
+  border-radius: 20px !important;
+}
+.modal {
+  /* background-image: url('../../../assets/Backgrund.png'); */
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  /* Fondo semitransparente */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 25px;
+  overflow: hidden;
+}
+
+
+.modal-body {
+  position: relative;
+  padding: 20px;
+  margin-bottom: 10px;
+  margin-bottom: 60px;
+  margin-top: 190px;
+  width: 1315px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: 15%;
+  margin-right: 15%;
+  background-color: #fbbc09;
+  text-align: center;
+  border-radius: 44px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  height: 70vh;
+
+}
+
+.modal-body footer {
+  display: flex;
+  margin-top: -41vh;
+  justify-content: flex-end;
+}
+
+
+.modal-body-header {
+  display: flex;
+  justify-content: space-between;
+  margin-top: -160px;
+
+
+}
+
+.nube {
+  margin-left: -140px;
+  margin-bottom: -30px;
+  z-index: 1;
+}
+.nube-footer{
+  z-index: 2;
+}
+
+.loro {
+  margin-top: 10px;
+  width: 263px;
+  height: 179px;
+  margin-right: -90px;
+}
+
+.media {
+  width: 260px;
+  height: 209px;
+  margin-right: -180px;
+}
+
+.modal-body-main {
+  margin-top: -20px;
+  display: flex;
+  height: 100vh;
+}
+
+.fondoUno {
+  display: block;
+  width: 90%;
+  margin-left: 25px;
+  height: 32%;
+  border-radius: 20px;
+}
+
+.fondoDos {
+    width: 47%;
+    height: 20vh;
+}
+
+.modal-body-main-imagenes {
+  width: 66%;
+}
+
+.modal-body-main-contenido {
+  width: 44%;
+}
+
+
+.contendor-imagenes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  padding: 20px 20px 10px 20px;
+  
+}
+
+.modal-body-main-contenido {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  height: 59vh;
+  overflow-y: auto;
+  border: none;
+  padding: 20px;
+}
+.modal-body-main-contenido:before {
+  content: "";
+  right: 48px;
+  bottom: 20px;
+  height: 14vh;
+  position: absolute;
+  width: 47%;
+  z-index: 100;
+  filter: blur(1px);
+  background: linear-gradient(180deg, rgba(242, 243, 248, 0) 0%, #ffc114 100%);
+}
+
+p {
+  margin: 0;
+}
+
+.modal-body-main-contenido h1 {
+
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: uppercase;
+  font-family: 'Rubik';
+}
+
+.modal-body-main-contenido h3 {
+  font-family: 'Rubik';
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 18px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+  margin-top: -5px;
+
+}
+
+.modal-body-main-contenido a {
+  position: absolute;
+  top: 0px;
+  right: 47px;
+  background-color: transparent;
+  border: none;
+  font-size: 2.5rem;
+  font-weight: 500;
+  cursor: pointer;
+  text-decoration: none; /* Elimina el subrayado */
+  color: #212529; /* Restaura el color original del texto */
+}
+
+.modal-body-main-contenido p {
+
+  font-family: 'Rubik';
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 120%;
+  letter-spacing: 0em;
+  text-align: justify;
+  margin-bottom: 10px;
+}
+
+.modal-body-main-contenido h2 {
+  margin-top: 30px;
+  font-family: 'Rubik';
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  text-transform: capitalize;
+}
+.modal-body-main-contenido li {
+  text-align: left;
+  line-height: 18px;
+  font-family: 'Rubik';
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+/* Para navegadores webkit (como Google Chrome) */
+.modal-body-main-contenido::-webkit-scrollbar {
+  width: 12px;
+  /* Ancho de la barra de desplazamiento */
+  border-radius: 6px;
+  /* Borde redondeado */
+  margin-left: -10px;
+}
+
+.modal-body-main-contenido::-webkit-scrollbar-thumb {
+  background: rgb(75, 75, 75);
+  /* Color amarillo para el pulgar (scrollbar) */
+  border-radius: 6px;
+  /* Borde redondeado para el pulgar */
+  height: 10px;
+}
+
+/* Para navegadores Mozilla Firefox */
+.modal-body-main-contenido {
+  scrollbar-width: thin;
+  /* Ancho de la barra de desplazamiento en Firefox */
+}
+
+.modal-body-main-contenido::-webkit-scrollbar-thumb {
+  background: rgb(75, 75, 75);
+  /* Color amarillo para el pulgar (scrollbar) */
+  border-radius: 6px;
+  /* Borde redondeado para el pulgar */
+  height: 10px;
+}
+.modal-body-main-contenido:last-child{
+  padding-bottom: 70px;
+}
+
+@media (max-width: 500px) {
+  .loro {
+    margin-top: 21px;
+    width: 144px;
+    height: 93px;
+    margin-right: -18px;
+    z-index: -1;
+  }
+
+  .media {
+    width: 276px;
+    height: 233px;
+    margin-right: -112px;
+  }
+
+  .nube {
+    margin-right: -120px;
+    padding-left: 103px;
+    margin-bottom: 35px;
+    z-index: -1;
+    height: 206px;
+    width: 250px;
+  }
+  .nube-footer {
+    margin-bottom: -60px;
+    width: 180px;
+    height: 50px;
+    margin-right: 100px;
+  }
+
+  .modal {
+    overflow-y: scroll;
+    position:fixed;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    padding-top: 260px;
+  }
+
+  .modal-body {
+    display: block;
+    width: 90%;
+    background-color: #fbbc09;
+    border-radius: 24px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 10px auto; /* Margen superior e inferior 10px y centrado horizontalmente */
+    padding: 10px 5px 30px 5px;
+    top: 1px; /* Centra verticalmente en relación con el contenedor padre */
+    transform: translateY(37%); /* Ajusta la posición verticalmente en función de la mitad de la altura del modal */
+    height: auto;
+    padding-bottom: 10px;
+    margin-right: 24px;
+    margin-left: 24px;
+  }
+  .modal-body footer {
+    display: flex;
+    margin-top: 0px;
+    padding-bottom: 10px;
+    justify-content: flex-end;
+  }
+
+  .modal-body-main {
+    width: 100%;
+    margin-top: -20px;
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  .fondoUno {
+    width: 85%;
+    height: auto;
+
+  }
+  .fondoDos{
+    width: 100%;
+    height: auto;
+  }
+
+  .contendor-imagenes {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    flex-wrap: wrap;
+  }
+
+  .modal-body-main-contenido {
+    width: 100%;
+    padding: 20px;
+    overflow-y: visible;
+    background: none;
+    height: auto;
+
+  }
+  .modal-body-main-contenido h1{
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  .modal-body-main-contenido h3{
+    font-size: 1.3rem;
+    text-align: center;
+    line-height: normal;
+  }
+
+  .modal-body-main-contenido h2{
+    font-size: 2rem;
+    text-align: center;
+    line-height: normal;
+  }
+  .modal-body-main-contenido p{
+    font-size: 1.1rem;
+    text-align: justify;
+    line-height: normal;
+  }
+
+  .modal-body-main-contenido li{
+    font-size: 1.1rem;
+    text-align: left;
+    line-height: normal;
+    margin-top: 30px;
+  }
+
+
+  .modal-body-main-contenido:last-child{
+    padding-bottom: 0px;
+  }
+  .modal-body-main-contenido:before {
+    content: "";
+    right: 48px;
+    bottom: 39px;
+    height: 14vh;
+    position: absolute;
+    width: 45%;
+    z-index: 100;
+    filter: blur(1px);
+    background:transparent;
+  }
+
+  .modal-body-main-contenido button {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+  }
+
+  .modal-body-main-imagenes {
+    width: 100%;
+  }
+  .difuminado{
+    display: none;
+  }
+
+  /* Para navegadores webkit (como Google Chrome) */
+.modal-body-main-contenido::-webkit-scrollbar {
+  display: visible;
+
+}
+
+.modal-body-main-contenido::-webkit-scrollbar-thumb {
+display: visible;
+}
+
+/* Para navegadores Mozilla Firefox */
+.modal-body-main-contenido {
+display: visible;
+}
+
+.modal-body-main-contenido::-webkit-scrollbar-thumb {
+display: visible;
+}
+
+p {
+  margin: 0;
+}
+
+
+}
