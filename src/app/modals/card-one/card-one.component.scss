@@ -257,8 +257,8 @@ p {
   }
 
   .media {
-    width: 276px;
-    height: 233px;
+    width: auto;
+    height: auto;
     
   }
 
@@ -284,7 +284,10 @@ p {
     margin-bottom: 0px;
     padding-top: 260px;
   }
-
+  .modal-body-header {
+   
+    margin-top: -44px;
+}
   .modal-body {
     display: block;
     width: 90%;
