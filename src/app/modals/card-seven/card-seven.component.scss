@@ -86,7 +86,6 @@ img{
   margin-left: 25px;
   height: 32%;
   border-radius: 20px;
-  object-fit: cover;
 }
 
 
@@ -94,7 +93,6 @@ img{
 .fondoDos {
     width: 47%;
     height: 20vh;
-    object-fit: cover;
 }
 
 .modal-body-main-imagenes {
@@ -149,7 +147,7 @@ p {
   letter-spacing: 0em;
   text-align: left;
   text-transform: uppercase;
-  font-family: 'Rubik';
+  font-family: 'Rubik' ;
 }
 
 .modal-body-main-contenido h3 {
@@ -159,7 +157,7 @@ p {
   line-height: 18px;
   letter-spacing: 0em;
   text-align: left;
-  text-transform: capitalize;
+  
   margin-bottom: 30px;
   margin-top: -5px;
 
@@ -191,7 +189,7 @@ p {
   font-weight: 400;
   line-height: 120%;
   letter-spacing: 0em;
-  text-align: justify;
+  text-align: left;
   margin-bottom: 10px;
 }
 
@@ -203,7 +201,7 @@ p {
   line-height: 22px;
   letter-spacing: 0em;
   text-align: left;
-  text-transform: capitalize;
+  
 }
 .modal-body-main-contenido li {
   text-align: left;
@@ -290,7 +288,7 @@ p {
   }
   .modal-body-header {
    
-    margin-top: -44px;
+    margin-top: 30px;
 }
   .modal-body {
     display: block;
@@ -367,7 +365,7 @@ p {
   }
   .modal-body-main-contenido p{
     font-size: 1.1rem;
-    text-align: justify;
+    text-align: left;
     line-height: normal;
   }
 
