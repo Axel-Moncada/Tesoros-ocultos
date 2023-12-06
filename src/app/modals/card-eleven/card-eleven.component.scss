@@ -65,7 +65,7 @@ img{
   margin-top: 10px;
   width: 263px;
   height: 179px;
-  margin-right: -90px;
+  margin-right: -0px;
 }
 
 .media {
@@ -87,6 +87,8 @@ img{
   height: 32%;
   border-radius: 20px;
 }
+
+
 
 .fondoDos {
     width: 47%;
@@ -163,16 +165,22 @@ p {
 
 .modal-body-main-contenido a {
   position: absolute;
-  top: 0px;
-  right: 47px;
-  background-color: transparent;
+  bottom: 100%;
+  right: -60px;
+  
   border: none;
   font-size: 2.5rem;
   font-weight: 500;
   cursor: pointer;
   text-decoration: none; /* Elimina el subrayado */
-  color: #212529; /* Restaura el color original del texto */
+  color: #262626; /* Restaura el color original del texto */
+  background-color: #fbbc09;
+  border-radius: 100%;
+  width: 70px;
+  height: 70px;
+  margin-bottom: 10px;
 }
+
 
 .modal-body-main-contenido p {
 
@@ -201,6 +209,10 @@ p {
   font-family: 'Rubik';
   font-size: 16px;
   margin-bottom: 16px;
+}
+
+#cerrar-btn-mobile {
+  display: none;
 }
 
 /* Para navegadores webkit (como Google Chrome) */
@@ -247,9 +259,9 @@ p {
   }
 
   .media {
-    width: 276px;
-    height: 233px;
-    margin-right: -112px;
+    width: auto;
+    height: auto;
+    
   }
 
   .nube {
@@ -274,7 +286,10 @@ p {
     margin-bottom: 0px;
     padding-top: 260px;
   }
-
+  .modal-body-header {
+   
+    margin-top: -44px;
+}
   .modal-body {
     display: block;
     width: 90%;
@@ -282,13 +297,13 @@ p {
     border-radius: 24px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     margin: 10px auto; /* Margen superior e inferior 10px y centrado horizontalmente */
-    padding: 10px 5px 30px 5px;
-    top: 1px; /* Centra verticalmente en relación con el contenedor padre */
+    padding: 10px 5px 10px 5px;
+    top: 30%; /* Centra verticalmente en relación con el contenedor padre */
     transform: translateY(37%); /* Ajusta la posición verticalmente en función de la mitad de la altura del modal */
     height: auto;
     padding-bottom: 10px;
     margin-right: 24px;
-    margin-left: 24px;
+    margin-left: 34px;
   }
   .modal-body footer {
     display: flex;
@@ -329,11 +344,13 @@ p {
     overflow-y: visible;
     background: none;
     height: auto;
+    margin-top: -30px;
 
   }
   .modal-body-main-contenido h1{
     font-size: 2.5rem;
     text-align: center;
+    line-height: 90%;
   }
   .modal-body-main-contenido h3{
     font-size: 1.3rem;
@@ -357,6 +374,28 @@ p {
     text-align: left;
     line-height: normal;
     margin-top: 30px;
+  }
+  .modal-body-main-contenido a{
+    display: none;
+  }
+  #cerrar-btn-mobile{
+    position: fixed !important;
+  bottom: 2%; 
+  right: 42%; 
+  width: 55px; 
+  height: 55px; 
+  background-color: #262626; 
+  color: #ffffff; 
+  border: none;
+  border-radius: 50%; 
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  text-decoration: none;
+  font-size: 2rem;
+  padding-bottom: 8px;
   }
 
 
